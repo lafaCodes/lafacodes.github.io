@@ -70,6 +70,11 @@ main {
   .user-title, .connect, .link-title, .support{
     display: none;
   }
+
+  .youtube {
+    display: block;
+  }
+  
   
 }
 
@@ -232,6 +237,10 @@ main {
   border-radius: 0% !important;
 }
 
+.youtube {
+  display: none;
+}
+
 .skills {
   flex: 2;
   width: 60%;
@@ -253,13 +262,17 @@ main {
 }
 
 .support h2 {
-  width: 40%;
+  width: 50%;
   color: white;
   font-weight: 600;
 }
 
 a {
   text-decoration: none;
+}
+
+a:hover, .logo:hover, .support:hover {
+  transform:scale(1.05) ;
 }
 /* Tech Skills */
 .status {
