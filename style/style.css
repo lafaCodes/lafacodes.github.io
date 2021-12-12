@@ -49,6 +49,118 @@ main {
   display: flex;
 }
 
+@media (max-width: 915px){
+  .glass {
+    width: 90%;
+    min-width: 400px !important;
+  }
+
+  .dashboard {
+    max-width: 100px !important;
+  }
+
+  .user {
+    width: 100px;
+  }
+
+  .link-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .user-title, .connect, .link-title, .support{
+    display: none;
+  }
+  
+}
+
+@media (max-width: 767px) {
+
+  .status>h1 {
+    font-size: 1.9rem !important;
+  }
+
+  .skills {
+    margin: 1.5rem !important;
+  }
+  .card {
+    min-width: 300px;
+    padding: 1em;
+  }
+  .skill-img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .card-info>h2{
+    font-size: 1.2em;
+  }
+  .card-info>p{
+    font-size: 0.8em;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+
+  .glass {
+    min-width: 300px !important;
+  }
+
+  .dashboard {
+    max-width: 80px !important;
+  }
+
+  .user>a>img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* .link {
+    margin: 0.2rem;
+    padding: 0.2rem 0.5rem;
+  } */
+  .link-icon {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  /* .user-title, .connect, .link-title, .support{
+    display: none;
+  } */
+
+  .status {
+    margin-bottom: 1.5rem;
+  }
+  .status>h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .skills {
+    margin: 1rem !important;
+  }
+
+  .card {
+    min-width: 200px;
+    padding: 1.5em !important;
+    margin: 0.5rem !important;
+  }
+
+  .skill-img {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .card-info>h2{
+    font-size: 0.95em;
+  }
+  .card-info>p{
+    font-size: 0.55em;
+  }
+  .percentage {
+    font-size: 0.9em;
+  }
+}
+
 .circle1,
 .circle2 {
   background: white;
@@ -76,7 +188,7 @@ main {
 
 .dashboard {
   width: 40%;
-  min-width: 300px;
+  /* min-width: 300px; */
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -162,13 +274,13 @@ a {
   );
   border: none;
   width: 50%;
-  min-width: 300px;
+  /* min-width: 300px; */
   padding: 0.5rem;
   border-radius: 2rem;
 }
 .skills {
   width: 60%;
-  min-width: 400px;
+  /* min-width: 400px; */
   margin: 5rem;
   display: flex;
   flex-direction: column;
