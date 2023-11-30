@@ -248,7 +248,8 @@ img {
 .highlight {
     background-color: yellow;
 }
- @keyframes blink {
+
+@keyframes blink {
     50% {
         opacity: 0;
     }
@@ -261,8 +262,9 @@ img {
 }
 
 input {
-    font-size: 16px; /* Adjust font size as needed */
-/*     padding: 5px; /* Adjust padding as needed */ */
+    font-size: 16px;
+    /* Adjust font size as needed */
+    /* padding: 5px; /* Adjust padding as needed */
 }
 
 /* @Media  */
