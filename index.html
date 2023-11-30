@@ -132,12 +132,17 @@
         
                     $(this).empty();
         
-                    words.forEach(function(word) {
+                    words.forEach(function(word, index) {
                         var span = $('<span>').text(word);
-                        if (word.toLowerCase().includes(searchKeyword)) {
+                        if (searchKeyword && word.toLowerCase().includes(searchKeyword)) {
                             span.addClass('highlight');
                         }
                         $(this).append(span);
+        
+                        // Add space between words if not the last word
+                        if (index < words.length - 1) {
+                            $(this).append(' ');
+                        }
                     }, this);
                 });
             });
