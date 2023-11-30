@@ -124,23 +124,28 @@
     <div class="circle2"></div>
 
     <script>
-    $(document).ready(function() {
-        $('#searchInput').on('input', function() {
-            var searchKeyword = $(this).val().toLowerCase();
-
-            $('.card-info').each(function() {
-                var skillText = $(this).find('p').text().toLowerCase();
-                var isMatch = skillText.includes(searchKeyword);
-
-                if (isMatch) {
-                    $('.card-info p').addClass('highlight');
-                } else {
-                    $('.card-info p').removeClass('highlight');
-                }
+        $(document).ready(function() {
+            $('#searchInput').on('input', function() {
+                var searchKeyword = $(this).val().toLowerCase();
+    
+                $('.card-info').each(function() {
+                    var skillText = $(this).find('p').text().toLowerCase();
+                    var commaIndex = skillText.indexOf(',');
+    
+                    if (commaIndex !== -1) {
+                        var apiText = skillText.substring(commaIndex + 1).trim();
+                        var isMatch = apiText.includes(searchKeyword);
+    
+                        if (isMatch) {
+                            $(this).addClass('highlight');
+                        } else {
+                            $(this).removeClass('highlight');
+                        }
+                    }
+                });
             });
         });
-    });
-</script>
+    </script>
 
 </body>
 </html>
