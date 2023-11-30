@@ -21,25 +21,25 @@ $(document).ready(function() {
             }, this);
         });
     });
-     // Dark mode toggle
-    const darkModeToggle = $('#darkModeToggle');
-    const body = $('body');
+    //  // Dark mode toggle
+    // const darkModeToggle = $('#darkModeToggle');
+    // const body = $('body');
 
-    // Check the initial dark mode preference
-    const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+    // // Check the initial dark mode preference
+    // const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
 
-    // Set initial dark mode state
-    setDarkMode(isDarkMode);
+    // // Set initial dark mode state
+    // setDarkMode(isDarkMode);
 
-    // Toggle dark mode on switch change
-    darkModeToggle.on('change', function () {
-      const newMode = body.hasClass('dark-mode') ? 'light' : 'dark';
-      setDarkMode(newMode === 'dark');
-    });
+    // // Toggle dark mode on switch change
+    // darkModeToggle.on('change', function () {
+    //   const newMode = body.hasClass('dark-mode') ? 'light' : 'dark';
+    //   setDarkMode(newMode === 'dark');
+    // });
 
-    // Function to set dark mode
-    function setDarkMode(isDark) {
-      body.toggleClass('dark-mode', isDark);
-      localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
-    }
+    // // Function to set dark mode
+    // function setDarkMode(isDark) {
+    //   body.toggleClass('dark-mode', isDark);
+    //   localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+    // }
 });
