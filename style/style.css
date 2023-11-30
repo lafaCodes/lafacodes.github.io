@@ -31,11 +31,12 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 
 .glass {
   background: white;
-  min-height: 80vh;
+/*   min-height: 80vh; */
   width: 60%;
   min-width: 900px;
   background: linear-gradient(
@@ -47,6 +48,7 @@ main {
   z-index: 3;
   backdrop-filter: blur(2rem);
   display: flex;
+  height: 100vh;
 }
 
 .circle1,
@@ -163,7 +165,7 @@ a:hover, .logo:hover, .support:hover {
 }
 /* Tech Skills */
 .status {
-  margin-bottom: 3rem;
+/*   margin-bottom: 3rem; */
 }
 
 .status input {
@@ -181,7 +183,8 @@ a:hover, .logo:hover, .support:hover {
 .skills {
   width: 60%;
   /* min-width: 400px; */
-  margin: 5rem;
+/*   margin: 5rem; */
+  padding: 1rem 5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -195,7 +198,7 @@ a:hover, .logo:hover, .support:hover {
     rgba(255, 255, 255, 0.5)
   );
   border-radius: 1rem;
-  margin: 2rem 0rem;
+/*   margin: 2rem 0rem; */
   padding: 2rem;
   box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
   justify-content: space-between;
@@ -226,13 +229,14 @@ a:hover, .logo:hover, .support:hover {
 }
 
 .card-info {
-  width: 50%;
+/*   width: 50%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .percentage {
+  display: none;
   font-weight: bold;
   background: linear-gradient(to right top, #65dfc9, #65cbeb);
   -webkit-background-clip: text;
