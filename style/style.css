@@ -271,6 +271,78 @@ input {
     /* padding: 5px; /* Adjust padding as needed */
 }
 
+/* Dark Mode Styles */
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+:root, ::after, ::before, ::backdrop {
+  --native-dark-opacity: 0.85;
+  --native-dark-bg-color: #292929;
+  --native-dark-text-shadow: none;
+  --native-dark-font-color: #dcdcdc;
+  --native-dark-link-color: #8db2e5;
+  --native-dark-cite-color: #92de92;
+  --native-dark-fill-color: #7d7d7d;
+  --native-dark-border-color: #555555;
+  --native-dark-visited-link-color: #c76ed7;
+  --native-dark-transparent-color: transparent;
+  --native-dark-bg-image-color: rgba(0, 0, 0, 0.25);
+  --native-dark-box-shadow: 0 0 0 1px rgb(255 255 255 / 10%);
+  --native-dark-bg-image-filter: brightness(50%) contrast(200%);
+}
+html[native-dark-active] body {
+  color: var(--native-dark-font-color);
+  background-color: var(--native-dark-bg-color);
+}
+html[native-dark-active] main, html[native-dark-active] .glass, html[native-dark-active] .dashboard {
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html[native-dark-active] .support {
+  color: var(--native-dark-font-color);
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html[native-dark-active] .card {
+  box-shadow: var(--native-dark-box-shadow);
+  background-image: none;
+  background-color: var(--native-dark-bg-color);
+  border-top-color: var(--native-dark-border-color);
+  border-right-color: var(--native-dark-border-color);
+  border-bottom-color: var(--native-dark-border-color);
+  border-left-color: var(--native-dark-border-color);
+}
+
 /* @Media  */
 
 @media (max-width: 915px){
@@ -309,7 +381,8 @@ input {
   }
 
   .skills {
-    margin: 1.5rem !important;
+/*     margin: 1.5rem !important; */
+    padding: 0.5rem;
   }
   .card {
     min-width: 300px;
@@ -333,7 +406,8 @@ input {
 @media (max-width: 480px) {
 
   .glass {
-    min-width: 300px !important;
+    min-width: 348px !important;
+    height: 90vh;
   }
 
   .dashboard {
@@ -365,13 +439,13 @@ input {
   }
 
   .skills {
-    margin: 1rem !important;
+/*     margin: 1rem !important; */
   }
 
   .card {
     min-width: 200px;
-    padding: 1.5em !important;
-    margin: 0.5rem !important;
+/*     padding: 1.5em !important; */
+/*     margin: 0.5rem !important; */
   }
 
   .skill-img {
@@ -383,7 +457,7 @@ input {
     font-size: 0.95em;
   }
   .card-info>p{
-    font-size: 0.55em;
+    font-size: 0.7em;
   }
   .percentage {
     font-size: 0.9em;
