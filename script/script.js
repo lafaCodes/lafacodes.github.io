@@ -22,14 +22,24 @@ $(document).ready(function() {
         });
     });
      // Dark mode toggle
-    $('#darkModeToggle').on('click', function() {
-        $('body').toggleClass('dark-mode');
-        updateDarkModeStyles();
+    const darkModeToggle = $('#darkModeToggle');
+    const body = $('body');
+
+    // Check the initial dark mode preference
+    const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+
+    // Set initial dark mode state
+    setDarkMode(isDarkMode);
+
+    // Toggle dark mode on switch change
+    darkModeToggle.on('change', function () {
+      const newMode = body.hasClass('dark-mode') ? 'light' : 'dark';
+      setDarkMode(newMode === 'dark');
     });
 
-    // Function to update dark mode styles
-    function updateDarkModeStyles() {
-        const darkModeEnabled = $('body').hasClass('dark-mode');
-        $('#darkModeStyles').attr('href', `./style/${darkModeEnabled ? 'dark-mode' : 'style'}.css`);
+    // Function to set dark mode
+    function setDarkMode(isDark) {
+      body.toggleClass('dark-mode', isDark);
+      localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
     }
 });
