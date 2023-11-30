@@ -209,6 +209,7 @@ a:hover, .logo:hover, .support:hover {
   border-radius: 1rem;
   position: relative;
   overflow: hidden;
+  display: none;
 }
 
 .progress::after,
