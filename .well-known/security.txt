@@ -1,0 +1,12 @@
+# security.txt — lafa.codes
+# https://securitytxt.org/
+
+Contact: mailto:hi@lafa.codes
+Contact: https://www.linkedin.com/in/roshanthapa1005/
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://lafa.codes/.well-known/security.txt
+Policy: https://github.com/lafaCodes/lafacodes.github.io/security/policy
+
+# If you discover a security vulnerability, please report it responsibly.
+# I appreciate your effort in making the web more secure.

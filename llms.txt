@@ -1,0 +1,32 @@
+# llms.txt — lafa.codes
+# See: https://llmstxt.org/
+
+> This is the personal portfolio of Roshan Thapa (lafa.codes_).
+
+## About
+
+Roshan Thapa is a Software Engineer specializing in AI, Automation, and Software Security. He builds intelligent, secure systems and ships products that matter. He is passionate about turning ambitious ideas into real-world solutions.
+
+## Focus Areas
+
+- **Artificial Intelligence**: Building intelligent systems with LLMs, ML pipelines, and AI agents that augment human capability and automate decision-making.
+- **Automation**: Designing workflows and systems that eliminate repetitive work — CI/CD pipelines, infrastructure as code, and smart orchestration.
+- **Software Security**: Baking security into every layer — threat modeling, secure code practices, penetration testing, and zero-trust architectures.
+- **Innovation & Products**: From zero to one — prototyping, validating, and shipping new products.
+
+## Tech Stack
+
+Python, TypeScript, React, Node.js, C#/.NET, Flutter, Docker, AWS, Azure, LLMs, CI/CD
+
+## Links
+
+- Website: https://lafa.codes/
+- GitHub: https://github.com/lafaCodes
+- LinkedIn: https://www.linkedin.com/in/roshanthapa1005/
+- X / Twitter: https://twitter.com/lafa_codes
+- Instagram: https://www.instagram.com/lafa.codes/
+- YouTube: https://www.youtube.com/channel/UCWnskWb3-O3mn_wS9gg2LOw
+
+## Contact
+
+Email: hi@lafa.codes

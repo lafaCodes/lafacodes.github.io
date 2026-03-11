@@ -1,0 +1,14 @@
+# robots.txt — lafa.codes
+# https://lafa.codes/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://lafa.codes/sitemap.xml
+
+# Security
+# Security contact: https://lafa.codes/.well-known/security.txt
+
+# AI / LLM
+# LLM info: https://lafa.codes/llms.txt

@@ -1,0 +1,16 @@
+/* TEAM */
+
+Developer: Roshan Thapa
+Contact: hi@lafa.codes
+GitHub: https://github.com/lafaCodes
+LinkedIn: https://www.linkedin.com/in/roshanthapa1005/
+Twitter: @lafa_codes
+Location: Earth
+
+/* SITE */
+
+Last update: 2026-03-12
+Language: English
+Standards: HTML5, CSS3, ES2024
+Components: Inter, JetBrains Mono (Google Fonts)
+Software: VS Code, GitHub Pages
